@@ -1,67 +1,107 @@
 body
 {
-    background: rgb(37,12,215);
-    background: linear-gradient(0deg, rgba(37,12,215,1) 0%, rgba(58,6,68,1) 100%);
-    background-attachment: fixed;
-    
-
-
+    background:whitesmoke;
 }
 
-h1
-{
+.imgtop {
+    border: auto;
+    vertical-align: middle;
     text-align: center;
-    border : 2px solid white;
-    border-radius: 15px;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 20px;
-    margin: 30px;
+    width: 100%;
+    height: 200px;
 }
 
 p
 {
-    color: white;
-    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
-    border : 2px solid rgb(255, 255, 255);
-    border-radius: 15px;    
-    text-align: center;
-    margin: 30px;
-    padding : auto;
-   
-
-}
-
-
-p.carte
-{
-    border : 2px solid white;
+    border : 2px solid rgb(255, 0, 0);
     border-radius: 15px;
-    position:relative;
-    padding: 60px;
-    margin: 120px
+    text-align: center;
+    margin: 5%;
+    padding : 2%;
 }
 
-p.reservations
+
+p.map
 {
-    position:relative;
-    padding: 60px;
-    margin: 120px
+    border : 2px solid rgb(255, 0, 0);
+    border-radius: 15px;
+
+    padding: 2%;
+    margin-top: 5%;
+    background-color: lightslategrey;
+    border : 2px solid rgb(234, 9, 9);
+    transition: all 0.5s ease;
+
 }
-p.liens
+
+p.reserv
 {
-    position:relative;
-    padding: 60px;
-    margin: 120px
+    padding: 2%;
+    margin-top: 5%;
+    background-color: lightslategrey;
+    border : 2px solid rgb(234, 9, 9);
+    transition: all 0.5s ease;
+}
+p.link
+{
+    padding: 2%;
+    margin-top: 5%;
+    background-color: lightslategrey;
+    border : 2px solid rgb(234, 9, 9);
+    transition: all 0.5s ease;
 }
 p.blog
 {
-    position:relative;
-    padding: 60px;
-    margin: 120px
+    padding: 2%;
+    margin-top: 5%;
+    background-color: lightslategrey;
+    border : 2px solid rgb(234, 9, 9);
+    transition: all 0.5s ease;
 }
 p.desc
 {
-    
+    padding: 2%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: lightslategrey;
+    border : 2px solid rgb(234, 9, 9);
+    transition: all 0.5s ease;
+}
+p.desc:hover
+{
+    background-color: rgb(255, 119, 0);
+
+}
+p.blog:hover
+{
+    background-color: rgb(255, 119, 0);
+}
+p.map:hover
+{
+    background-color: rgb(255, 119, 0);
+}
+p.link:hover
+{
+    background-color: rgb(255, 119, 0);
+}
+p.reserv:hover
+{
+    background-color: rgb(255, 119, 0);
+}
+
+.bg-title{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 0;
+}
+
+.divtop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
 }
