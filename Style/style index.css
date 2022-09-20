@@ -1,4 +1,5 @@
-body{
+body
+{
     background: rgb(37,12,215);
     background: linear-gradient(0deg, rgba(37,12,215,1) 0%, rgba(58,6,68,1) 100%);
     background-attachment: fixed;
@@ -6,6 +7,7 @@ body{
 
 
 }
+
 h1
 {
     text-align: center;
@@ -16,13 +18,50 @@ h1
     padding: 20px;
     margin: 30px;
 }
-p{
+
+p
+{
     color: white;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
-    border : 2px solid rgba(95, 20, 235, 0.350);
+    border : 2px solid rgb(255, 255, 255);
     border-radius: 15px;    
     text-align: center;
-    
+    margin: 30px;
+    padding : auto;
+   
 
+}
+
+
+p.carte
+{
+    border : 2px solid white;
+    border-radius: 15px;
+    position:relative;
+    padding: 60px;
+    margin: 120px
+}
+
+p.reservations
+{
+    position:relative;
+    padding: 60px;
+    margin: 120px
+}
+p.liens
+{
+    position:relative;
+    padding: 60px;
+    margin: 120px
+}
+p.blog
+{
+    position:relative;
+    padding: 60px;
+    margin: 120px
+}
+p.desc
+{
+    
 }
