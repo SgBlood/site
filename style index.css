@@ -1,0 +1,28 @@
+body{
+    background: rgb(37,12,215);
+    background: linear-gradient(0deg, rgba(37,12,215,1) 0%, rgba(58,6,68,1) 100%);
+    background-attachment: fixed;
+    
+
+
+}
+h1
+{
+    text-align: center;
+    border : 2px solid white;
+    border-radius: 15px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    margin: 30px;
+}
+p{
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border : 2px solid rgba(95, 20, 235, 0.350);
+    border-radius: 15px;    
+    text-align: center;
+    
+
+}
