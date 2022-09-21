@@ -1,5 +1,6 @@
 body
 {
+	margin: 0;
 	color: rgb(105, 0, 236);
 	font-family: Andale Mono, monospace;
 }
@@ -10,6 +11,7 @@ h1
 	margin-top: 2%;
 	margin-bottom: 5%;
 	color: rebeccapurple;
+	font-family: cursive;
 }
 
 a
@@ -78,11 +80,14 @@ a:hover
 	margin-top: 0;
 }
 
+/* style du menu de navigation */
+
 nav ul
 {
     list-style-type: none; /* supprime le format de liste (les puces) */
     display: flex;
-    background-color: grey;
+    width: 100%;
+    background-color: rgb(196,157,245);
     padding: 0;
     margin: 0;
 }
@@ -90,13 +95,15 @@ nav ul
 nav .li
 {
     width: 200px; /* augmente la longueur des cases des éléments */ 
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin-right: 50px; /* permet d'espacer (visuellement) les éléments de la liste avec des marges*/
     margin-top: 15px;
     margin-bottom: 15px;
-    text-align: center; /* aligner les textes au centre des cases */
-    border: 6px rgb(65,65,65) ridge;
-    border-radius: 15px;
-    background-color: black;
+    background-color: rebeccapurple;
+    text-align: center;
+    border: 2px rgb(65,65,65) ridge;
+    border-radius: 0% 50% 0% 50%;
 }
 
 nav li a  /* signifie les liens (a) DANS la (les) section(s) li de <nav> */
@@ -123,13 +130,146 @@ nav li a  /* signifie les liens (a) DANS la (les) section(s) li de <nav> */
 #menu ul li {
 /* on enlève ce comportement pour les liens du sous menu */
     display: inherit;
-    background-color: rgb(160,160,160);
+    width: 200%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rebeccapurple;
     text-align: center;
-    border: 4px rgb(65,65,65) ridge;
+    border: 2px rgb(65,65,65) ridge;
     border-radius: 0% 50% 0% 50%;
 }
 
 #menu li:hover .sous_menu /* Au survol des li du menu affiche les sous menus */
 { 
     left: auto;
+}
+
+/* style du forum */
+
+.news
+{
+    width:75%;
+    margin:auto;
+}
+
+.news h3
+{
+	box-shadow: inset 5px 10px 15px mediumpurple; 
+	padding: 7px;
+	text-align: center;
+    background-color:#512E5F;
+    color:white;
+    font-size:22px;
+    margin-bottom:0;
+    border-radius: 100px 100px 0  0; /* arrondis les bords */
+}
+
+.date_billet, .auteur_billet, .date_tchat /* pour aligner à droite (sans changer de ligne) la date ET l'auteur des billets (ET autres classes) */
+{
+	float: right;
+	margin-right: 5%;
+}
+
+.news p
+{
+	box-shadow: inset 0px 5px 20px #512E5F,inset -5px -10px 15px white; /* pour les ombres */
+	padding: 20px;
+	padding-bottom: 15px;
+    background-color:#CCCCCC; /* couleur en hexadécimal */
+    margin-top:0;
+    border-radius:0 0 25px 5px;
+}
+
+.news h3 a 
+{
+	color: white;
+	text-decoration: none;
+}
+
+.news h3 a:hover
+{
+	color: rgb(0,150,255);
+}
+
+.news p a
+{
+	font-weight: bold; /* pour mettre en gras */
+    text-decoration: none;
+}
+
+#commentaire p
+{
+	color: black;
+}
+
+ /* style des liens ppour naviguer entre les pages */
+
+.pagination  /* style des liens ppour naviguer entre les pages */
+{
+	display: flex;
+	justify-content: center;
+}
+
+.pagination a
+{
+	color: rebeccapurple;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 5px;
+	margin: 5px;
+	margin-top: 20px;
+	text-decoration: none;
+	border: 2px solid grey;
+	border-radius: 10px; 
+}
+
+#PageCourante
+{
+	color: rebeccapurple;
+	box-shadow: inset -2px -2px 4px rebeccapurple;
+	pointer-events: none; /* désactive le liens (devient incliquable) */
+}
+
+.pagination a:hover
+{
+    color: rgb(0,150,255);
+}
+
+.recherche
+{
+	font-size: 20px;
+}
+
+/* style de la page membre */
+
+.page_membre
+{
+	margin-top: 50px;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 40px;
+	padding-bottom: 20px;
+	padding-top: 15px;
+	border: 15px double black;
+	border-radius: 20px;
+	background-color: rgb(220,220,220);
+	box-shadow: inset 15px 10px 10px white, inset 0px -5px 20px grey, 50px 30px 20px grey;
+}
+
+.supprimer  /* style des liens 'supprimer' */
+{
+	float: left;
+	margin-right: 3%;
+	color: maroon;
+}
+
+.supprimer:hover
+{
+	color: red;
+}
+
+.derniersCom
+{
+	text-decoration: none;
+	color: navy;
 }

@@ -18,6 +18,7 @@ body
     text-align: center;
     z-index: 0;
     opacity: 1;
+    font-family: "Times New Roman", Times, serif;
 }
 .divtop {
     display: flex;
@@ -31,7 +32,7 @@ p
 {
     color: rgb(255, 255, 255);
     font-size: 25px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Times New Roman", Times, serif;
     border : 2px solid rgb(0, 0, 0);
     border-radius: 15px;
     text-align: center;
