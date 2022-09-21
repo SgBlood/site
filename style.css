@@ -1,0 +1,135 @@
+body
+{
+	color: rgb(105, 0, 236);
+	font-family: Andale Mono, monospace;
+}
+
+h1
+{
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 5%;
+	color: rebeccapurple;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+.image_logo 
+{
+	height: 80px;
+	width: 80px;
+}
+
+.texte
+{
+	width: 80%;
+}
+
+
+.texte p 
+{
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 1.1em;
+	margin-left: 2em; 
+	margin-right: 2em;
+	text-align: justify;
+}
+
+.lien
+{
+	text-align: right;
+}
+
+.lien a 
+{
+	background-color: rebeccapurple;
+	color:  white;
+	padding: 15px;
+	padding-right: 25px;
+	padding-left: 25px;
+	border-radius: 25px;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+.texte h2
+{
+	color: rebeccapurple;
+	text-align: center;
+}
+
+.liens
+{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap-reverse;
+}
+
+#plan 
+{
+	margin: 10%;
+	border-radius: 50px;
+	margin-top: 0;
+}
+
+nav ul
+{
+    list-style-type: none; /* supprime le format de liste (les puces) */
+    display: flex;
+    background-color: grey;
+    padding: 0;
+    margin: 0;
+}
+
+nav .li
+{
+    width: 200px; /* augmente la longueur des cases des éléments */ 
+    margin-right: 50px; /* permet d'espacer (visuellement) les éléments de la liste avec des marges*/
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center; /* aligner les textes au centre des cases */
+    border: 6px rgb(65,65,65) ridge;
+    border-radius: 15px;
+    background-color: black;
+}
+
+nav li a  /* signifie les liens (a) DANS la (les) section(s) li de <nav> */
+{
+    color: white; /* couleur des mots du menu */
+    text-decoration: none; /*pas de soulignement automatique */
+    font-size: 17px;/* éloigne les éléments du bord haut */
+}
+
+.sous_menu
+{
+    display: block;
+    height: 0px;
+    margin: 5px;
+    margin-left: 0px;
+    padding: 0px;
+    width: 8%;
+    position: absolute; /* on cache les sous menus complètement sur la gauche */
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+}
+
+#menu ul li {
+/* on enlève ce comportement pour les liens du sous menu */
+    display: inherit;
+    background-color: rgb(160,160,160);
+    text-align: center;
+    border: 4px rgb(65,65,65) ridge;
+    border-radius: 0% 50% 0% 50%;
+}
+
+#menu li:hover .sous_menu /* Au survol des li du menu affiche les sous menus */
+{ 
+    left: auto;
+}
