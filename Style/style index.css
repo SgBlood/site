@@ -24,7 +24,7 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(238, 32, 32);
+    color: rgb(238, 31, 32);
    
 }
 
@@ -118,5 +118,6 @@ position: absolute;
   #scroll_to_top img {
     width: 70px;
   }
+
       
 
