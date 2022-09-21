@@ -118,6 +118,16 @@ position: absolute;
   #scroll_to_top img {
     width: 70px;
   }
+  #back {
+    position: fixed;
+    width: 20px;
+    height: 50px;
+    bottom: 100px;
+    right: 60px;
+  }
+  #back img {
+    width: 60px;
+  }
 
       
 
